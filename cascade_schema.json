@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPIDER Cascade Precursor Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "network_id",
+    "cascade_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "network_id": {
+      "type": "string"
+    },
+    "cascade_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "edge_stress_mean": {
+      "type": "number"
+    },
+    "edge_stress_max": {
+      "type": "number"
+    },
+    "edge_stress_concentration": {
+      "type": "number"
+    },
+    "edge_velocity_positive": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+machine: SPIDER-M1
+version: 1.0.0
+
+temporal_horizons:
+  - 3
+  - 7
+  - 23
+
+graph:
+  directed: true
+  lagged_edges: true
+
+primary_metric:
+  name: brier_score
+  comparison: spider_vs_node_only
+
+freeze:
+  hash: sha256
